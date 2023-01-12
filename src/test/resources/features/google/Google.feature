@@ -1,19 +1,16 @@
-Feature: Busqueda de google, se esperar realizar e ingresar a una pagina utilizando el buscador de google.
-
+Feature: Busqueda de google
 
   Background:
   Given Ingresar a google
 
-  @google @tsoft
+  @TEST_XRAY-13
   Scenario: Busqueda google
-
     When introduzco la palabra "Tsoft"
     And selecciono el resultado de la busqueda "Tsoft"
     Then se visualiza la pagina "https://www.tsoftglobal.com/"
 
-
+  @TEST_XRAY-16
   Scenario Outline: Busqueda google parametrizada
-
     When introduzco la palabra "<Busqueda>"
     And selecciono el resultado de la busqueda "<Busqueda>"
     Then se visualiza la pagina "<Url>"
