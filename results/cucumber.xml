@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="183.844">
+    <testcase classname="Busqueda de google, se esperar realizar e ingresar a una pagina utilizando el buscador de google." name="Busqueda google" time="183.673">
+        <system-out>
+            <![CDATA[Given Ingresar a google.....................................................passed
+When introduzco la palabra "Tsoft"..........................................passed
+And selecciono el resultado de la busqueda "Tsoft"..........................passed
+Then se visualiza la pagina "https://www.tsoftglobal.com/"..................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
