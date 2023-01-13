@@ -16,7 +16,7 @@ pipeline {
       steps {
         sh "gradle --version"
         sh "java --version"
-        sh "chmod +x -R 777 ${env.WORKSPACE}"
+        sh "chmod u+r ${env.WORKSPACE}"
         echo "$TESTPLAN"
         sh 'gradle clean runWithCucumber -P tags=\\"@TEST_XRAY-13\\"'
       }
